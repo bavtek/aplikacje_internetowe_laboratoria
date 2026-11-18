@@ -1,0 +1,9 @@
+Zadanie 4.1 c) Wyjaśnij, czym różni się app.get() od app.listen().
+
+app.get(ścieżka, handler) definiuje trasę (routing).
+Mówi aplikacji, co ma zrobić po otrzymaniu żądania HTTP GET na dany adres.
+Sama nie uruchamia żadnego serwera, tylko rejestruje regułę obsługi.
+
+app.listen(port, callback) uruchamia serwer HTTP,
+który zaczyna nasłuchiwać połączeń na danym porcie.
+Bez niego aplikacja z trasami nie odpowiadałaby na żadne żądania.
